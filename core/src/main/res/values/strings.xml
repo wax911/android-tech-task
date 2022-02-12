@@ -1,0 +1,4 @@
+<resources>
+    <string name="action_retry">Retry</string>
+    <string name="label_loading_please_wait">Loading, please wait..</string>
+</resources>

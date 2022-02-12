@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="AppTheme.FontFamily" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.PopupTheme" parent="@style/Widget.Material3.PopupMenu">
+        <item name="android:popupElevation">@dimen/lg_margin</item>
+    </style>
+
+    <!-- This will set the fade in animation on all your activities by default -->
+    <style name="AppTheme.WindowAnimationStyle">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

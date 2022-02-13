@@ -1,6 +1,7 @@
 package io.wax911.challenge.core.extensions
 
 import android.content.Context
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import androidx.core.content.ContextCompat
@@ -18,3 +19,15 @@ fun Context.layoutInflater(): LayoutInflater =
 
 fun View.layoutInflater(): LayoutInflater =
     context.layoutInflater()
+
+val Float.dp: Float
+    get() = (this * Resources.getSystem().displayMetrics.density + 0.5f)
+
+val Int.dp: Int
+    get() = (this * Resources.getSystem().displayMetrics.density + 0.5f).toInt()
+
+val Float.px: Float
+    get() = (this / Resources.getSystem().displayMetrics.density + 0.5f)
+
+val Int.px: Int
+    get() = (this / Resources.getSystem().displayMetrics.density + 0.5f).toInt()

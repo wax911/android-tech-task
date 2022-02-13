@@ -36,7 +36,6 @@ internal class DependencyStrategy(private val project: Project) {
     private fun DependencyHandler.applyCoroutinesDependencies() {
         implementation(Libraries.JetBrains.KotlinX.Coroutines.android)
         implementation(Libraries.JetBrains.KotlinX.Coroutines.core)
-        implementation(Libraries.CashApp.Copper.copper)
 
         test(Libraries.JetBrains.KotlinX.Coroutines.test)
         androidTest(Libraries.CashApp.Turbine.turbine)

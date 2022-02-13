@@ -14,11 +14,8 @@ private fun Project.applyFeatureModuleGroupDependencies() {
     dependencies.implementation(Libraries.AndroidX.Activity.activityKtx)
     dependencies.implementation(Libraries.AndroidX.Fragment.fragmentKtx)
     dependencies.implementation(Libraries.AndroidX.StartUp.startUpRuntime)
-    dependencies.implementation(Libraries.AndroidX.Collection.collectionKtx)
     dependencies.implementation(Libraries.AndroidX.SwipeRefresh.swipeRefreshLayout)
     dependencies.implementation(Libraries.AndroidX.ConstraintLayout.constraintLayout)
-
-    dependencies.implementation(Libraries.CashApp.Contour.contour)
 
     dependencies.implementation(Libraries.Google.Material.material)
 
@@ -69,7 +66,6 @@ private fun Project.applyAppModuleGroupDependencies() {
             dependencies.implementation(Libraries.AndroidX.SwipeRefresh.swipeRefreshLayout)
             dependencies.implementation(Libraries.AndroidX.ConstraintLayout.constraintLayout)
 
-            dependencies.implementation(Libraries.AndroidX.Collection.collectionKtx)
             dependencies.implementation(Libraries.AndroidX.Recycler.recyclerView)
         }
         Modules.App.Data.id -> {
@@ -81,7 +77,6 @@ private fun Project.applyAppModuleGroupDependencies() {
 
             dependencies.implementation(Libraries.Square.OkHttp.logging)
             dependencies.implementation(Libraries.Square.Retrofit.retrofit)
-            dependencies.implementation(Libraries.Square.Retrofit.gsonConverter)
             dependencies.implementation(Libraries.retrofitSerializer)
 
             dependencies.debugImplementation(Libraries.Chuncker.debug)
@@ -93,7 +88,6 @@ private fun Project.applyAppModuleGroupDependencies() {
         Modules.App.Navigation.id -> {
             dependencies.implementation(Libraries.AndroidX.Core.coreKtx)
             dependencies.implementation(Libraries.AndroidX.Activity.activityKtx)
-            dependencies.implementation(Libraries.AndroidX.Collection.collectionKtx)
             dependencies.implementation(Libraries.AndroidX.Fragment.fragment)
         }
     }
@@ -102,14 +96,12 @@ private fun Project.applyAppModuleGroupDependencies() {
 private fun Project.applyCommonModuleGroupDependencies() {
     println("Applying common feature dependencies for module -> $path")
 
+    dependencies.implementation(Libraries.AirBnB.Paris.paris)
     dependencies.implementation(Libraries.AndroidX.Core.coreKtx)
     dependencies.implementation(Libraries.AndroidX.Activity.activityKtx)
     dependencies.implementation(Libraries.AndroidX.Fragment.fragmentKtx)
     dependencies.implementation(Libraries.AndroidX.StartUp.startUpRuntime)
-    dependencies.implementation(Libraries.AndroidX.Collection.collectionKtx)
     dependencies.implementation(Libraries.AndroidX.ConstraintLayout.constraintLayout)
-
-    dependencies.implementation(Libraries.CashApp.Contour.contour)
 
     dependencies.implementation(Libraries.Google.Material.material)
 

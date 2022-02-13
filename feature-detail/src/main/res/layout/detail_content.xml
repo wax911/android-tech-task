@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.wax911.challenge.core.widget.StateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/xl_margin">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <io.wax911.challenge.common.widget.donut.DonutProgressIndicator
+            android:id="@+id/donutProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <Space android:layout_height="@dimen/xl_margin"
+            android:layout_width="wrap_content" />
+
+        <io.wax911.challenge.common.widget.card.StatusCard
+            android:id="@+id/creditUsed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space android:layout_height="@dimen/md_margin"
+            android:layout_width="wrap_content" />
+
+        <io.wax911.challenge.common.widget.card.StatusCard
+            android:id="@+id/todoCompleted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</io.wax911.challenge.core.widget.StateLayout>

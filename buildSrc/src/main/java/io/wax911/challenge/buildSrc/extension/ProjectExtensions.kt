@@ -37,7 +37,7 @@ fun Project.matchesFeatureModule() = Modules.Feature.values().any { it.id == nam
  * Module that support [Libraries.JetBrains.KotlinX.Coroutines] dependencies
  */
 fun Project.hasCoroutineSupport() =
-    name != Modules.App.Navigation.id || name != Modules.App.Domain.id
+    name != Modules.App.Navigation.id
 
 /**
  * Module that support [Libraries.Koin.AndroidX] dependencies

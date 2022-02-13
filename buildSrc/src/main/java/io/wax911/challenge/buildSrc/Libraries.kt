@@ -15,6 +15,13 @@ object Libraries {
         const val jitPack = "https://www.jitpack.io"
     }
 
+    object AirBnB {
+        object Paris {
+            private const val version = "2.0.1"
+            const val paris = "com.airbnb.android:paris:$version"
+        }
+    }
+
     object Android {
         object Tools {
             private const val version = "7.1.0"
@@ -26,11 +33,6 @@ object Libraries {
         object Activity {
             private const val version = "1.4.0"
             const val activityKtx = "androidx.activity:activity-ktx:$version"
-        }
-
-        object Collection {
-            private const val version = "1.2.0"
-            const val collectionKtx = "androidx.collection:collection-ktx:$version"
         }
 
         object Core {
@@ -116,16 +118,6 @@ object Libraries {
     }
 
     object CashApp {
-        object Copper {
-            private const val version = "1.0.0"
-            const val copper = "app.cash.copper:copper-flow:$version"
-        }
-
-        object Contour {
-            private const val version = "1.1.0"
-            const val contour = "app.cash.contour:contour:$version"
-        }
-
         object Turbine {
             private const val version = "0.7.0"
             const val turbine = "app.cash.turbine:turbine:$version"
@@ -206,11 +198,6 @@ object Libraries {
                 const val test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$version"
             }
 
-            object DateTime {
-                private const val version = "0.2.1"
-                const val datetime = "org.jetbrains.kotlinx:kotlinx-datetime:$version"
-            }
-
             object Serialization {
                 private const val version = "1.3.2"
                 const val json = "org.jetbrains.kotlinx:kotlinx-serialization-json:$version"
@@ -255,7 +242,6 @@ object Libraries {
         object Retrofit {
             private const val version = "2.9.0"
             const val retrofit = "com.squareup.retrofit2:retrofit:$version"
-            const val gsonConverter =  "com.squareup.retrofit2:converter-gson:$version"
         }
 
         object OkHttp {

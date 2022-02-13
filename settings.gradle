@@ -6,5 +6,6 @@ include(
     ":domain",
     ":common-widget",
     ":feature-detail",
+    ":feature-landing",
     ":navigation",
 )

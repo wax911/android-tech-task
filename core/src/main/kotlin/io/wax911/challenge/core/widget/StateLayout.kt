@@ -29,10 +29,10 @@ class StateLayout @JvmOverloads constructor(
     }
 
     init {
-        onInit(context, attrs)
+        onInit(context)
     }
 
-    private fun onInit(context: Context, attrs: AttributeSet?) {
+    private fun onInit(context: Context) {
         if (!isInEditMode)
             setupAdditionalViews()
 

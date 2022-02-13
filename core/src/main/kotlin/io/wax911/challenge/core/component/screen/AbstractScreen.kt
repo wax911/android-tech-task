@@ -61,10 +61,11 @@ abstract class AbstractScreen<B: ViewBinding> : AppCompatActivity(),
             setupKoinFragmentFactory()
         }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            @Suppress("DEPRECATION")
-            applyDecorations(window.decorView.systemUiVisibility)
-        }
+        // Wanted to go for an all white theme at first
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        //    @Suppress("DEPRECATION")
+        //    applyDecorations(window.decorView.systemUiVisibility)
+        //}
 
         super.onCreate(savedInstanceState)
 

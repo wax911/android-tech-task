@@ -1,0 +1,256 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "702eaf1c31e2e8d7e68d860a02f73083",
+    "entities": [
+      {
+        "tableName": "credit",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `expires_at` INTEGER NOT NULL, `account_idv_status` TEXT NOT NULL, `dashboard_status` TEXT NOT NULL, `persona_type` TEXT NOT NULL, `augmented_credit_score` TEXT, `credit_score` INTEGER NOT NULL, `credit_score_band` INTEGER NOT NULL, `credit_status` TEXT NOT NULL, `credit_max_score_value` INTEGER NOT NULL, `credit_min_score_value` INTEGER NOT NULL, `credit_months_since_last_defaulted` INTEGER NOT NULL, `credit_has_ever_defaulted` INTEGER NOT NULL, `credit_months_since_last_delinquent` INTEGER NOT NULL, `credit_has_ever_been_delinquent` INTEGER NOT NULL, `credit_percentage_credit_used` INTEGER NOT NULL, `credit_percentage_credit_used_direction_flag` INTEGER NOT NULL, `credit_changed_score` INTEGER NOT NULL, `credit_current_short_term_debt` INTEGER NOT NULL, `credit_current_short_term_non_promotional_debt` INTEGER NOT NULL, `credit_current_short_term_credit_limit` INTEGER NOT NULL, `credit_current_short_term_credit_utilisation` INTEGER NOT NULL, `credit_changeInShort_term_debt` INTEGER NOT NULL, `credit_current_long_term_debt` INTEGER NOT NULL, `credit_current_long_term_non_promotional_debt` INTEGER NOT NULL, `credit_current_long_term_credit_limit` INTEGER, `credit_current_long_term_credit_utilisation` INTEGER, `credit_change_in_long_term_debt` INTEGER NOT NULL, `credit_num_positive_score_factors` INTEGER NOT NULL, `credit_num_negative_score_factors` INTEGER NOT NULL, `credit_equifax_score_band` INTEGER NOT NULL, `credit_equifax_score_band_description` TEXT NOT NULL, `credit_days_until_next_report` INTEGER NOT NULL, `credit_active_todo` INTEGER NOT NULL, `credit_active_chat` INTEGER NOT NULL, `credit_number_of_todo_items` INTEGER NOT NULL, `credit_number_of_completed_todo_items` INTEGER NOT NULL, `credit_selected` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "expiresAt",
+            "columnName": "expires_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "accountIDVStatus",
+            "columnName": "account_idv_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dashboardStatus",
+            "columnName": "dashboard_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "personaType",
+            "columnName": "persona_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "augmentedCreditScore",
+            "columnName": "augmented_credit_score",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creditReportInfo.score",
+            "columnName": "credit_score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.scoreBand",
+            "columnName": "credit_score_band",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.status",
+            "columnName": "credit_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.maxScoreValue",
+            "columnName": "credit_max_score_value",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.minScoreValue",
+            "columnName": "credit_min_score_value",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.monthsSinceLastDefaulted",
+            "columnName": "credit_months_since_last_defaulted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.hasEverDefaulted",
+            "columnName": "credit_has_ever_defaulted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.monthsSinceLastDelinquent",
+            "columnName": "credit_months_since_last_delinquent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.hasEverBeenDelinquent",
+            "columnName": "credit_has_ever_been_delinquent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.percentageCreditUsed",
+            "columnName": "credit_percentage_credit_used",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.percentageCreditUsedDirectionFlag",
+            "columnName": "credit_percentage_credit_used_direction_flag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.changedScore",
+            "columnName": "credit_changed_score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.currentShortTermDebt",
+            "columnName": "credit_current_short_term_debt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.currentShortTermNonPromotionalDebt",
+            "columnName": "credit_current_short_term_non_promotional_debt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.currentShortTermCreditLimit",
+            "columnName": "credit_current_short_term_credit_limit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.currentShortTermCreditUtilisation",
+            "columnName": "credit_current_short_term_credit_utilisation",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.changeInShortTermDebt",
+            "columnName": "credit_changeInShort_term_debt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.currentLongTermDebt",
+            "columnName": "credit_current_long_term_debt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.currentLongTermNonPromotionalDebt",
+            "columnName": "credit_current_long_term_non_promotional_debt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.currentLongTermCreditLimit",
+            "columnName": "credit_current_long_term_credit_limit",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creditReportInfo.currentLongTermCreditUtilisation",
+            "columnName": "credit_current_long_term_credit_utilisation",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creditReportInfo.changeInLongTermDebt",
+            "columnName": "credit_change_in_long_term_debt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.numPositiveScoreFactors",
+            "columnName": "credit_num_positive_score_factors",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.numNegativeScoreFactors",
+            "columnName": "credit_num_negative_score_factors",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.equifaxScoreBand",
+            "columnName": "credit_equifax_score_band",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.equifaxScoreBandDescription",
+            "columnName": "credit_equifax_score_band_description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditReportInfo.daysUntilNextReport",
+            "columnName": "credit_days_until_next_report",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coachingSummary.activeTodo",
+            "columnName": "credit_active_todo",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coachingSummary.activeChat",
+            "columnName": "credit_active_chat",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coachingSummary.numberOfTodoItems",
+            "columnName": "credit_number_of_todo_items",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coachingSummary.numberOfCompletedTodoItems",
+            "columnName": "credit_number_of_completed_todo_items",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coachingSummary.selected",
+            "columnName": "credit_selected",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '702eaf1c31e2e8d7e68d860a02f73083')"
+    ]
+  }
+}

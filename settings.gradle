@@ -1,0 +1,11 @@
+rootProject.name= "android-tech-task"
+include(
+    ":app",
+    ":core",
+    ":data",
+    ":domain",
+    ":common-widget",
+    ":feature-detail",
+    ":feature-landing",
+    ":navigation",
+)

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="@dimen/md_margin"
+        android:right="@dimen/md_margin"
+        android:bottom="@dimen/md_margin"
+        android:left="@dimen/md_margin">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:top="@dimen/md_margin"
+                android:left="@dimen/md_margin"
+                android:right="@dimen/md_margin"
+                android:bottom="@dimen/md_margin"
+                />
+            <stroke android:width="@dimen/sm_margin"
+                android:color="@color/onSurface"/>
+        </shape>
+    </item>
+</layer-list>

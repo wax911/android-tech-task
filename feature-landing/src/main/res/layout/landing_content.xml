@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.wax911.challenge.core.widget.StateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/xl_margin">
+
+    <io.wax911.challenge.common.widget.donut.DonutProgressIndicator
+        android:id="@+id/donutProgressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+</io.wax911.challenge.core.widget.StateLayout>
